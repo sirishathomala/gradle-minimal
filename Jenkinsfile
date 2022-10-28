@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('checkout SCM') {
             steps {
-            git branch: 'main', url: "https://github.com/balavu/gradle-minimal.git"
+            git branch: 'main', url: "https://github.com/sirishathomala/gradle-minimal.git"
             }
         }
 
