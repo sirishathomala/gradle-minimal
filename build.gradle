@@ -12,7 +12,7 @@ buildscript {
 allprojects {
     repositories {
         maven {
-            url "http://3.142.225.46:8081/artifactory/gradle-dev/"
+            url "http://35.77.75.226:8082/artifactory"
         }
     }
 }
@@ -38,7 +38,7 @@ artifactory {
     contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
     publish {
         repository {
-            repoKey = 'gradle-dev-local'
+            repoKey = 'gradle-gradle-dev-local'
             username = "${artifactory_user}"
             password = "${artifactory_password}"
             maven = true
@@ -47,7 +47,7 @@ artifactory {
     }
     resolve {
         repository {
-            repoKey = 'gradle-dev'
+            repoKey = 'gradle-gradle-dev'
             username = "${artifactory_user}"
             password = "${artifactory_password}"
             maven = true
