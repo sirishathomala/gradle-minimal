@@ -12,7 +12,7 @@ buildscript {
 allprojects {
     repositories {
         maven {
-            url "http://35.77.75.226:8082/artifactory"
+            url "http://35.77.75.226:8082/artifactory/gradle-gradle-dev"
         }
     }
 }
